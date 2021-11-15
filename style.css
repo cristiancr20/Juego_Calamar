@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background: linear-gradient(to bottom right,#1b1e25 50%, crimson);
+}
+.navbar .nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav .logo{
+    width: 120px;
+}
+
+.navbar .nav .logo img{
+    width: 100%;
+}
+
+.navbar .nav .nav__options{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav .nav__options ul{
+    display: flex;
+}
+
+.navbar .nav .nav__options ul a{
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+    transition: all .3s ease-in-out;
+}
+
+.navbar .nav .nav__options ul a:hover{
+    color: #fff;
+    transform: scale(1.2);
+}
+
+
+.navbar .nav .nav__options ul a li{
+    list-style: none;
+}
+
+.navbar .nav .sesion{
+    display: flex;
+    align-items: center;
+    
+}
+.navbar .nav .sesion .log button,
+.navbar .nav .sesion .sign button{
+    border: 2px solid white;
+    background: none;
+    height: 30px;
+    width: 70px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.navbar .nav .sesion .log button:hover,
+.navbar .nav .sesion .sign button:hover{
+    background: crimson;
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: auto;
+}
+
+.home .home__sec_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .home__sec_1 .name{
+    
+    color: white;
+}
+
+.home .home__sec_1 .name p{
+    font-size: 150px;
+}
+
+.home .home__sec_1  .buton{
+    display: flex;
+    justify-content: center;
+}
+.home .home__sec_1  .buton button{
+    width: 250px;
+    height: 50px;
+    border: 2px solid white;
+    background: none;
+    letter-spacing: 4.5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white    ;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.home .home__sec_1  .buton button:hover{
+    background: crimson;
+}
+
+.home .home__sec_1  .buton button i{
+    font-size: 30px;
+    color: white;
+}
+
+.home .home__sec_2 .imagen{
+    display: flex;
+    justify-content: center;
+    height: 580px;
+}
+
+.home .home__sec_2 .imagen img{
+    height: 100%;
+}
+
+.games{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+    width: 90%;
+    margin:20px auto;
+}
+
+.game .title{
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.games{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.games .card{
+    position: relative;
+    width: 150px;
+    height: 250px;
+}
+.games .card div{
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: all .5s ease-in-out;
+}
+.games .card .front img{
+    width: 150px;
+    border-radius: 20px;
+}
+
+.games .card .front{
+    transform: perspective(500px) rotateY(0deg);
+}
+
+
+.games .card .back{
+    
+    background: black;
+    transform: perspective(500px) rotateY(180deg);
+}
+.games .card:hover .front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.games .card:hover .back{
+    transform: perspective(500px) rotateY(360deg);
+}
