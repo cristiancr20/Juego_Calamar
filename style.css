@@ -157,6 +157,7 @@ body{
     position: relative;
     width: 150px;
     height: 250px;
+    cursor: pointer;
 }
 .games .card div{
     position: absolute;
